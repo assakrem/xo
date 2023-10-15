@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+
+body{
+    --principal_color: rgb(80, 66, 77);
+    --secondary_color:rgb(245, 231, 228);
+
+    font-family: 'Rubik', sans-serif;
+    background-color: var(--principal_color);
+    height: 100vh;
+    display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+}
+
+button{
+    background-color: var(--principal_color);
+    border: 5px solid var(--secondary_color);
+
+    font-family: 'Rubik', sans-serif;
+    color: var(--secondary_color);
+    padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-bottom: 16px;
+}
+
+#tips{
+    border: 5px solid var(--secondary_color);
+    color: var(--secondary_color);
+    padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 25px;
+}
+
+.line{
+    display: flex;
+}
+.box{
+    --side_margin : 17px;
+    --top_margin : 10px;
+
+    width: 80px;
+    height: 80px;
+    border-style: solid;
+    border-width: 10px;
+    border-color: var(--secondary_color);
+    margin-top: var(--top_margin);
+    margin-bottom: var(--top_margin);
+    margin-left: var(--side_margin);
+    margin-right: var(--side_margin);
+    cursor: pointer;
+    display: flex;
+ justify-content: center;
+}
+.image{
+    -webkit-user-drag: none;
+}

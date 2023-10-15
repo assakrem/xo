@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>game</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    
+</head>
+
+<body>
+
+    <button onclick="reset_game()">reset</button>
+
+    <div id="canvas">
+    <div class="line">
+        <div class="box"> <img id="1" class="image" src="blank.png" alt="b" onclick="changeImage(this)"> </div><div class="box"> <img id="2" class="image" src="blank.png" alt="b" onclick="changeImage(this)"> </div><div class="box"> <img id="3" class="image" src="blank.png" alt="b" onclick="changeImage(this)"> </div>
+    </div>
+    <div class="line">
+        <div class="box"> <img id="4" class="image" src="blank.png" alt="b" onclick="changeImage(this)"> </div><div class="box"> <img id="5" class="image" src="blank.png" alt="b" onclick="changeImage(this)"> </div><div class="box"> <img id="6" class="image" src="blank.png" alt="b" onclick="changeImage(this)"> </div>
+    </div>
+    <div class="line">
+        <div class="box"> <img id="7" class="image" src="blank.png" alt="b" onclick="changeImage(this)"> </div><div class="box"> <img id="8" class="image" src="blank.png" alt="b" onclick="changeImage(this)"> </div><div class="box"> <img id="9" class="image" src="blank.png" alt="b" onclick="changeImage(this)"> </div>
+    </div>
+    </div>
+
+    <p id="tips"> The o player start</p>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
