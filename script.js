@@ -15,12 +15,18 @@ var box7 = document.getElementById("7");
 var box8 = document.getElementById("8");
 var box9 = document.getElementById("9");
 
+var spanX = document.getElementById("x_score");
+var spanO = document.getElementById("o_score");
+var scoreX = 0;
+var scoreO = 0;
+
 function reset_game() {
     for (var i = 0; i < boxs.length; i++) {
         boxs[i].src = 'blank.png';
         boxs[i].alt = 'b';
+        boxs[i].classList.remove("fade_in_image");
     }
-    tips.innerHTML ="game is reset";
+    tips.innerHTML ="game is reset and player "+ player +" turn";
     game = 'start';
     won = false;
 }
@@ -30,22 +36,28 @@ function changeImage(image) {
         if (player == 'o' && image.alt == 'b') {
             image.src = 'o.png';
             image.alt = 'o';
+            image.classList.add("fade_in_image");
     
             player = 'x';
-            tips.innerHTML ="player x turn";
+            tips.innerHTML ="player X turn";
         }else if (player == 'x' && image.alt == 'b') {
             image.src = 'x.png';
             image.alt = 'x';
+            image.classList.add("fade_in_image");
     
             player = 'o';
-            tips.innerHTML ="player o turn";
+            tips.innerHTML ="player O turn";
         }
     
         if( checkIfWon('x')){
             tips.innerHTML ="X has won";
+            scoreX  = scoreX +1;
+            spanX.innerHTML = ""+scoreX;
             game = 'stop';
         } else if ( checkIfWon('o')){
             tips.innerHTML ="O has won";
+            scoreO  = scoreO +1;
+            spanO.innerHTML = ""+scoreO;
             game = 'stop';
         }
     }

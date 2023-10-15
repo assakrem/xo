@@ -41,6 +41,18 @@ button{
   border-radius: 25px;
 }
 
+#scores{
+  border: 5px solid var(--secondary_color);
+  color: var(--secondary_color);
+  font-family: 'Rubik', sans-serif;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 25px;
+}
+
 .line{
     display: flex;
 }
@@ -63,4 +75,13 @@ button{
 }
 .image{
     -webkit-user-drag: none;
+}
+
+
+.fade_in_image {
+  animation: fadeIn 1s;
+}
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
