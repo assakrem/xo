@@ -7,28 +7,44 @@
     <title>game</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="icon" type="image/x-icon" href="xofaveicone.png">
-    
+
 </head>
 
 <body>
 
-    <button onclick="reset_game()">reset</button>
+    <div id="body2">
+        <div id="character_select">
+            <img src="ORedLogo.png" alt="o" onclick="selected(this)"> <img src="XBlueLogo.png" alt="x"
+                onclick="selected(this)">
+        </div>
 
-    <div id="canvas">
-    <div class="line">
-        <div class="box"> <img id="1" class="image" src="blank.png" alt="b" onclick="changeImage(this)"> </div><div class="box"> <img id="2" class="image" src="blank.png" alt="b" onclick="changeImage(this)"> </div><div class="box"> <img id="3" class="image" src="blank.png" alt="b" onclick="changeImage(this)"> </div>
-    </div>
-    <div class="line">
-        <div class="box"> <img id="4" class="image" src="blank.png" alt="b" onclick="changeImage(this)"> </div><div class="box"> <img id="5" class="image" src="blank.png" alt="b" onclick="changeImage(this)"> </div><div class="box"> <img id="6" class="image" src="blank.png" alt="b" onclick="changeImage(this)"> </div>
-    </div>
-    <div class="line">
-        <div class="box"> <img id="7" class="image" src="blank.png" alt="b" onclick="changeImage(this)"> </div><div class="box"> <img id="8" class="image" src="blank.png" alt="b" onclick="changeImage(this)"> </div><div class="box"> <img id="9" class="image" src="blank.png" alt="b" onclick="changeImage(this)"> </div>
-    </div>
-    </div>
 
-    <p id="tips"> The O player start</p>
-    <p id="scores">X : <span id="x_score">0</span>   | O : <span id="o_score">0</span></p>
+        <button onclick="reset_game()">reset</button>
 
+        <div id="canvas">
+            <div class="line">
+                <div class="box"> <img id="1" class="image" src="blank.png" alt="b" onclick="changeImage(this)"> </div>
+                <div class="box"> <img id="2" class="image" src="blank.png" alt="b" onclick="changeImage(this)"> </div>
+                <div class="box"> <img id="3" class="image" src="blank.png" alt="b" onclick="changeImage(this)"> </div>
+            </div>
+            <div class="line">
+                <div class="box"> <img id="4" class="image" src="blank.png" alt="b" onclick="changeImage(this)"> </div>
+                <div class="box"> <img id="5" class="image" src="blank.png" alt="b" onclick="changeImage(this)"> </div>
+                <div class="box"> <img id="6" class="image" src="blank.png" alt="b" onclick="changeImage(this)"> </div>
+            </div>
+            <div class="line">
+                <div class="box"> <img id="7" class="image" src="blank.png" alt="b" onclick="changeImage(this)"> </div>
+                <div class="box"> <img id="8" class="image" src="blank.png" alt="b" onclick="changeImage(this)"> </div>
+                <div class="box"> <img id="9" class="image" src="blank.png" alt="b" onclick="changeImage(this)"> </div>
+            </div>
+        </div>
+
+        <p id="tips"> The O player start</p>
+        <p id="scores">X : <span id="x_score">0</span> | O : <span id="o_score">0</span></p>
+
+
+
+    </div>
     <script src="script.js"></script>
 
 </body>
